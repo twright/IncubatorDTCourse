@@ -101,19 +101,25 @@ We will use python as the main programming language for creating the digital twi
 
 **Installation:** https://www.docker.com/products/docker-desktop/
 
-**Tutorial:** https://docker-curriculum.com/
+**Tutorial:**
+1. Start on the materials under [0-Pre-requisites](0-Pre-requisites)
+2. Complement them with https://docker-curriculum.com/
 
 ### RabbitMQ
 
 **Installation:** Not needed, since we will configure and run a rabbitmq server using docker.
 
-**Tutorial:** Follow the python tutorials in https://www.rabbitmq.com/tutorials 
+**Tutorial:** 
+1. Start on the materials under [0-Pre-requisites](0-Pre-requisites)
+1. Complement them with the python tutorials in https://www.rabbitmq.com/tutorials 
 
 ### InfluxDB
 
 **Installation:** Not needed, since we will configure and run an influxdb server using docker.
 
-**Tutorial:** https://docs.influxdata.com/influxdb/v2/get-started/
+**Tutorial:** 
+1. Start on the materials under [0-Pre-requisites](0-Pre-requisites)
+2. Complement them with https://docs.influxdata.com/influxdb/v2/get-started/
 
 ## Course Organization and Activities Index
 
