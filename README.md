@@ -118,6 +118,7 @@ We will use python as the main programming language for creating the digital twi
 ## Course Organization and Activities Index
 
 The course is organized in different folders, to be followed in their alphanumerical order.
+Each folder contains one or more jupyter notebooks that you should run and go carefully over.
 
 ## Repository Maintenance
 
