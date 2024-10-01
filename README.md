@@ -60,7 +60,9 @@ We assume the reader is familiar with the following tools (material are provided
 
 We will use python as the main programming language for creating the digital twin, due to its wide usage, versatility, and excellent library support.
 
-**Installation:** [Python 3.11](https://www.python.org/) as minimum version. We recommend to install the latest python version, and revert to the suggested version if you face problems.
+**Installation:** 
+1. Use [Python 3.11](https://www.python.org/) as minimum version. We recommend to install the latest python version, and revert to the suggested version if you face problems.
+2. Install the python dependencies declared in the [requirements.txt](requirements.txt) file. Run `pip install -r requirements.txt`
 
 **Tutorial:** 
 1. https://docs.python.org/3.11/tutorial/index.html
@@ -125,6 +127,10 @@ The course is organized in different folders, to be followed in their alphanumer
       Get-ChildItem -Include *.md -Recurse | Foreach {markdown-link-check --config .\markdown_link_check_config.json $_.fullname}
       ```
    2. If relevant, regenerate the [Table of Contents](#contents), either by hand or (recommended) using [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) or some other utility.
+2. Run notebooks and check that there are no errors:
+   ```powershell
+    run_tests.ps1
+   ```
 
 ## Frequently Asked Questions
 
