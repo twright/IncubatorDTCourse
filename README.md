@@ -50,7 +50,7 @@ We assume the reader is familiar with the following tools (material are provided
    1. For windows, we recommend:
       1. https://git-scm.com/downloads/guis
    2. For mac, we recommend: 
-      1. TODO
+      1. https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop
    3. For Linux, we recommend:
       1. TODO
 
