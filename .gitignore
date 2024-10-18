@@ -1,2 +1,3 @@
 0-Pre-requisites/influxdb_data/
 0-Pre-requisites/influxdb_config/
+*.log
