@@ -1,0 +1,25 @@
+2024-10-18 08:07:01.491 DEBUG AverageService : Ready to listen for msgs in queue dtcourse.incubator.averageservice bound to topic dtcourse.incubator.averageservice
+2024-10-18 08:07:01.491 INFO AverageService : AverageService setup complete.
+2024-10-18 08:07:04.256 DEBUG AverageService : Message received: 
+f{'method': 'compute_average', 'args': {'values': [1.0, 2.0, 3.0, 4.0, 5.0]}}
+2024-10-18 08:07:04.256 DEBUG AverageService : routing_key_reply = famq.gen-dZSFKzlv9YLuNXwJjuTikQ
+2024-10-18 08:07:04.256 DEBUG AverageService : request_id = f74b19e2b-54f1-4e48-85a7-cb7169b48d9a
+2024-10-18 08:07:04.256 INFO AverageService : compute_average called. Received values: [1.0, 2.0, 3.0, 4.0, 5.0]
+2024-10-18 08:07:04.256 DEBUG AverageService : Sending reply msg:
+{'average': 3.0}
+2024-10-18 08:07:05.517 DEBUG AverageService : Message received: 
+f{'method': 'compute_average', 'args': {'values': []}}
+2024-10-18 08:07:05.517 DEBUG AverageService : routing_key_reply = famq.gen-LKxsxmJ_EfCFLEiS4oH3Xw
+2024-10-18 08:07:05.517 DEBUG AverageService : request_id = f9018ee07-e94f-4682-8b49-f126529f3c41
+2024-10-18 08:07:05.517 INFO AverageService : compute_average called. Received values: []
+2024-10-18 08:07:05.517 WARNING AverageService : Received an empty list of values. Cannot compute average. Returning error
+2024-10-18 08:07:05.517 DEBUG AverageService : Sending reply msg:
+{'error': 'Received an empty list of values. Cannot compute average.'}
+2024-10-18 08:07:25.684 DEBUG AverageService : Message received: 
+f{'method': 'some_other_method', 'args': {'values': []}}
+2024-10-18 08:07:25.684 DEBUG AverageService : routing_key_reply = famq.gen-qZh-o22x0-JQQe6UWxvUgg
+2024-10-18 08:07:25.684 DEBUG AverageService : request_id = fb7d0c610-7cc8-48bc-b042-f9d1be9cbfc3
+2024-10-18 08:07:25.684 WARNING AverageService : Method specified does not exist: some_other_method. Message:
+{'method': 'some_other_method', 'args': {'values': []}}
+2024-10-18 08:07:25.684 DEBUG AverageService : Sending reply msg:
+{'error': 'Method specified does not exist: some_other_method.'}
