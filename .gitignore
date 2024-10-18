@@ -1,4 +1,6 @@
+*.log
 0-Pre-requisites/influxdb_data/
 0-Pre-requisites/influxdb_config/
-*.log
 1-Incubator-Service/average_service.py
+1-Incubator-Service/logging.conf
+1-Incubator-Service/moving_temperature_average_service.py
