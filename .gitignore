@@ -4,3 +4,4 @@
 1-Incubator-Service/average_service.py
 1-Incubator-Service/logging.conf
 1-Incubator-Service/moving_temperature_average_service.py
+1-Incubator-Service/pt_configuration_service.py
