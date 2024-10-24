@@ -8,3 +8,5 @@
 2-Controller-Modelling/logging.conf
 2-Controller-Modelling/start_incubator.py
 2-Controller-Modelling/controller.py
+3-Physics-Modelling/temperature_prediction_model.pth
+3-Physics-Modelling/temperature_prediction_model.py
