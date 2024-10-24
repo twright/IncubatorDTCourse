@@ -1,4 +1,5 @@
 *.log
+*.pyc
 0-Pre-requisites/influxdb_data/
 0-Pre-requisites/influxdb_config/
 1-Incubator-Service/average_service.py
@@ -10,3 +11,6 @@
 2-Controller-Modelling/controller.py
 3-Physics-Modelling/temperature_prediction_model.pth
 3-Physics-Modelling/temperature_prediction_model.py
+3-Physics-Modelling/logging.conf
+3-Physics-Modelling/start_incubator.py
+3-Physics-Modelling/temperature_prediction_service.py
