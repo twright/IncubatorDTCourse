@@ -2,7 +2,9 @@
 
 This repository hosts the materials that guide the reader into building a digital twin for the [incubator project](https://github.com/INTO-CPS-Association/example_digital-twin_incubator).
 
-The idea is to give a step by step guide with examples on how to build a digital twin.
+The idea is to give a step by step guide with examples on how to build a digital twin for an incubator. 
+
+Each module is in a separate folder, containing one or more Jupyter notebooks. It is **strongly recommended that modules and jupyter notebooks are followed in order**, as they sometimes depend on each other.
 
 ## Contents
 - [Incubator Digital Twin Course](#incubator-digital-twin-course)
