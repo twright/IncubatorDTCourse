@@ -19,3 +19,9 @@
 5-IncubatorPTEmulator/incubator_data_recorder_influx.py
 6-PuttingItAllTogether/start_influxdb_rabbitmq.py
 7-SoftwareSensing/incubator_KF.html
+7-SoftwareSensing/lorenz63_forecast.h5
+7-SoftwareSensing/lorenz63_forecast.toml
+7-SoftwareSensing/lorenz63_simulate.toml
+7-SoftwareSensing/lorenz63-x.ssv
+7-SoftwareSensing/lorenz63-y.ssv
+7-SoftwareSensing/lorenz63-z.ssv
