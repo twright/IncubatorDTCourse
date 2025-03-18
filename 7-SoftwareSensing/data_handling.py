@@ -93,3 +93,4 @@ def load_data(filepath, heater_voltage, heater_current, events=None, desired_tim
         event_data = load_timestamped_data(events, desired_timeframe, time_unit, normalize_time, convert_to_seconds)
 
     return derive_data(data, heater_voltage, heater_current, events=event_data), event_data
+
