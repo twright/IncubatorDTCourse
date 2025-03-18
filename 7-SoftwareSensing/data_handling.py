@@ -2,7 +2,7 @@
 # Ignore this: just a bunch of functions to load and enhance the data
 import math
 import pandas
-from scipy import integrate
+import numpy as np
 
 def from_ns_to_s(time_ns):
     return time_ns / 1e9
@@ -64,8 +64,8 @@ def convert_event_to_signal(time, events, categories, start):
     return signal
 
 
-def derive_data(data, events=None):
-    data["power_in"] = data.apply(lambda row: HEATER_VOLTAGE * HEATER_CURRENT if row.heater_on else 0.0, axis=1)
+def derive_data(data, heater_voltage, heater_current, events=None):
+    data["power_in"] = data.apply(lambda row: heater_voltage * heater_current if row.heater_on else 0.0, axis=1)
 
     data["average_temperature"] = data.apply(lambda row: np.mean([row.t2, row.t3]), axis=1)
     zero_kelvin = 273.15
@@ -85,11 +85,11 @@ def derive_data(data, events=None):
 
     return data
 
-def load_data(filepath, events=None, desired_timeframe=(- math.inf, math.inf), time_unit='s', normalize_time=True, convert_to_seconds=False):
+def load_data(filepath, heater_voltage, heater_current, events=None, desired_timeframe=(- math.inf, math.inf), time_unit='s', normalize_time=True, convert_to_seconds=False):
     data = load_timestamped_data(filepath, desired_timeframe, time_unit, normalize_time, convert_to_seconds)
     event_data = None
     if events is not None:
         assert not normalize_time, "Not allowed to normalize data with events."
         event_data = load_timestamped_data(events, desired_timeframe, time_unit, normalize_time, convert_to_seconds)
 
-    return derive_data(data, events=event_data), event_data
+    return derive_data(data, heater_voltage, heater_current, events=event_data), event_data
